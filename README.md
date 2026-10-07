@@ -1,17 +1,17 @@
-# 🤖 AI Interview Preparation Platform
+#  AI Interview Preparation Platform
 
 An AI-powered full-stack web application designed to help candidates prepare for technical interviews through role-specific interview questions, resume analysis, personalized answer evaluation, and interview history tracking.
 
-## 🚀 Features
+##  Features
 
-### 🎯 Mock Interview Questions
+###  Mock Interview Questions
 - Generate interview questions based on the selected job role.
 - Supports different experience levels.
 - Allows users to choose the number of questions.
 - Uses an LLM API for AI-generated questions.
 - Includes a built-in fallback question bank when the AI service is unavailable.
 
-### 📝 Answer Evaluation
+###  Answer Evaluation
 - Answer interview questions directly within the platform.
 - Receive an overall score out of 100.
 - Get personalized feedback on:
@@ -21,7 +21,7 @@ An AI-powered full-stack web application designed to help candidates prepare for
   - Clarity and relevance
   - Suggested better approach
 
-### 📄 Resume Feedback
+###  Resume Feedback
 - Submit resume content along with the target role.
 - Receive a resume score.
 - Identify strengths in the resume.
@@ -29,12 +29,12 @@ An AI-powered full-stack web application designed to help candidates prepare for
 - Uses AI-powered analysis when the LLM API is available.
 - Includes rule-based fallback feedback when the AI service is unavailable.
 
-### 📊 Interview History
+### Interview History
 - Stores previous interview practice sessions.
 - Allows users to review previous questions, evaluations, and scores.
 - Helps track interview preparation progress.
 
-### 🛡️ Fallback System
+###  Fallback System
 The application is designed to remain functional even when the LLM API is unavailable.
 
 It automatically falls back to:
@@ -46,7 +46,7 @@ This provides reliable functionality during development and testing.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - HTML5
@@ -71,40 +71,3 @@ This provides reliable functionality during development and testing.
 - GitHub
 - npm
 - Postman
-
----
-
-## 🏗️ Project Architecture
-
-```text
-                    ┌─────────────────────┐
-                    │        User         │
-                    │  Interview Practice │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │      Frontend       │
-                    │   HTML/CSS/JS       │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Express Backend   │
-                    │      REST APIs      │
-                    └──────────┬──────────┘
-                               │
-                       ┌───────┴───────┐
-                       │               │
-                       ▼               ▼
-                ┌─────────────┐ ┌─────────────┐
-                │   LLM API   │ │  Fallback   │
-                │             │ │    Logic    │
-                └──────┬──────┘ └──────┬──────┘
-                       │               │
-                       └───────┬───────┘
-                               ▼
-                    ┌─────────────────────┐
-                    │ Interview Results   │
-                    │ Score & Feedback    │
-                    └─────────────────────┘
