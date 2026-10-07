@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interview Prep — AI Career Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#edf0f3;--surface:#fff;--ink:#17222d;--teal:#0f4c5c;--teal2:#176b7f;--amber:#e3a21a;--line:#d4dbe2;--muted:#58667a;--good:#176b4a;--bad:#9b1c1c;--shadow:0 14px 40px rgba(23,34,45,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#f5f7f8 0,#edf0f3 100%);color:var(--ink);font:400 16px/1.55 'Bricolage Grotesque',system-ui,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}main{max-width:1000px;margin:auto;padding:30px 20px 70px}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}.brand{font-weight:800;letter-spacing:.03em}.brand span{color:var(--teal)}.pill{font-size:.8rem;border:1px solid var(--line);background:#fff;padding:7px 11px;border-radius:999px;color:var(--muted)}.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:24px;align-items:stretch;margin-bottom:28px}.hero-copy{padding:8px 0}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:700;color:var(--teal);margin-bottom:10px}.hero h1{font-size:clamp(2.5rem,7vw,5.1rem);line-height:.98;letter-spacing:-.045em;margin:0 0 16px;font-weight:800}.hero p{color:var(--muted);max-width:650px;font-size:1.05rem}.stats{background:var(--ink);color:#fff;border-radius:22px;padding:24px;display:grid;grid-template-columns:1fr;gap:14px;box-shadow:var(--shadow)}.stat{padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.16)}.stat:last-child{border-bottom:0;padding-bottom:0}.stat strong{display:block;font-size:1.7rem}.stat span{color:#c9d3dc;font-size:.85rem}.tabs{display:flex;gap:6px;background:#dfe5ea;padding:6px;border-radius:16px;margin-bottom:24px;position:sticky;top:10px;z-index:10}.tabs button{flex:1;border:0;background:transparent;color:var(--muted);padding:12px 10px;border-radius:11px;font-weight:700}.tabs button.active{background:var(--ink);color:#fff}.panel{display:none}.panel.active{display:block}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow);margin-bottom:20px}.card h2,.card h3{margin:0 0 8px}.muted{color:var(--muted)}label{display:block;font-weight:700;margin:16px 0 6px}input,select,textarea{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,76,92,.1)}textarea{min-height:150px;resize:vertical}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.primary{border:0;background:var(--teal);color:#fff;padding:12px 18px;border-radius:11px;font-weight:700;margin-top:18px}.primary:hover{background:var(--teal2)}.primary:disabled{opacity:.6;cursor:wait}.secondary{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 14px;border-radius:10px;font-weight:700}.status{display:inline-block;background:#fff3cc;color:#725000;border:1px solid #efd37b;border-radius:999px;padding:5px 10px;font-size:.78rem;font-weight:700}.question-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.qnum{font-size:.75rem;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.08em}.progress{height:8px;background:#e7ebef;border-radius:999px;overflow:hidden;margin:16px 0}.progress>div{height:100%;background:var(--teal);transition:width .25s}.question-card{border:1px solid var(--line);border-radius:17px;padding:20px;margin-top:14px;background:#fff}.tip{background:#f7f8fa;border-left:4px solid var(--amber);padding:10px 12px;color:var(--muted);border-radius:0 9px 9px 0;margin:12px 0}.answer-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:10px}.feedback{margin-top:14px;padding:16px;border-radius:13px;background:#f6f8f9;border:1px solid var(--line)}.score-row{display:flex;align-items:center;gap:16px}.score{font-size:3.4rem;line-height:1;font-weight:800;color:var(--teal)}.score small{font-size:1rem;color:var(--muted)}.scorebar{height:10px;background:#e6eaed;border-radius:999px;overflow:hidden;flex:1}.scorebar div{height:100%;background:var(--teal)}ul{padding-left:22px}li{margin:7px 0}.resume-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:20px}.scorebox{display:flex;align-items:center;gap:16px;padding:20px;border:1px solid var(--line);border-radius:16px;background:#f8fafb}.score-big{font-size:4rem;line-height:1;font-weight:800;color:var(--teal)}.section-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--muted);margin-bottom:6px}.history-item{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-top:1px solid var(--line)}.history-item:first-child{border-top:0}.history-title{font-weight:800}.empty{text-align:center;padding:40px 10px;color:var(--muted)}.err{color:var(--bad);font-weight:700;margin-top:12px}.hidden{display:none!important}.loading{color:var(--muted);padding:16px 0}.footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:35px}@media(max-width:760px){.hero{grid-template-columns:1fr}.resume-grid{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.tabs{position:static}.hero h1{font-size:3rem}.topbar{margin-bottom:20px}.question-head{flex-direction:column}}
+</style>
+</head>
+<body>
+<main>
+  <header class="topbar"><div class="brand">INTERVIEW<span>PREP</span></div><div class="pill">AI Career Coach</div></header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Prepare smarter · Practice better</div>
+      <h1>Practice the interview before the interview.</h1>
+      <p>Generate role-specific questions, practice your answers, get feedback, and improve your resume — all in one place.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong id="statSessions">0</strong><span>practice sessions</span></div>
+      <div class="stat"><strong id="statQuestions">0</strong><span>questions generated</span></div>
+      <div class="stat"><strong id="statResume">—</strong><span>best resume score</span></div>
+    </div>
+  </section>
+
+  <nav class="tabs" aria-label="Main sections">
+    <button class="active" data-tab="mock">🎤 Mock Interview</button>
+    <button data-tab="resume">📄 Resume Review</button>
+    <button data-tab="history">🕘 History</button>
+  </nav>
+
+  <section id="mock" class="panel active">
+    <div class="card" id="setupCard">
+      <div class="eyebrow">Start a session</div>
+      <h2>Configure your interview</h2>
+      <p class="muted">Choose the role, difficulty, and number of questions.</p>
+      <label for="role">Target role</label>
+      <input id="role" value="Software Engineer Intern" maxlength="80">
+      <div class="grid2">
+        <div><label for="level">Experience level</label><select id="level"><option>entry-level</option><option>mid-level</option><option>senior</option></select></div>
+        <div><label for="count">Questions</label><select id="count"><option>3</option><option selected>5</option><option>8</option></select></div>
+      </div>
+      <button class="primary" id="qgo">Start mock interview →</button>
+      <div id="qerr" class="err"></div>
+    </div>
+    <div id="qout"></div>
+  </section>
+
+  <section id="resume" class="panel">
+    <div class="card">
+      <div class="eyebrow">Recruiter-style review</div>
+      <h2>Make your resume interview-ready</h2>
+      <p class="muted">Get a score, strengths, and concrete improvements for your target role.</p>
+      <label for="rrole">Role you are applying for</label>
+      <input id="rrole" value="Software Engineer Intern" maxlength="80">
+      <label for="rtext">Paste your resume text</label>
+      <textarea id="rtext" placeholder="Paste your complete resume here..."></textarea>
+      <button class="primary" id="rgo">Review my resume →</button>
+      <div id="rerr" class="err"></div>
+    </div>
+    <div id="rout"></div>
+  </section>
+
+  <section id="history" class="panel">
+    <div class="card">
+      <div class="eyebrow">Your progress</div>
+      <h2>Practice history</h2>
+      <p class="muted">Review your previous resume analyses and mock interview sessions.</p>
+      <div id="hout" class="loading">Loading history…</div>
+    </div>
+  </section>
+
+  <div class="footer">Built as a full-stack AI interview preparation project.</div>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let uid = '';
+try { uid = localStorage.getItem('uid') || ''; } catch (e) {}
+if (!uid) { uid = 'u-' + Math.random().toString(36).slice(2, 12); try { localStorage.setItem('uid', uid); } catch (e) {} }
+
+async function api(path, body) {
+  const options = body ? {method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({userId:uid,...body})} : {};
+  const r = await fetch(path, options);
+  let d = {};
+  try { d = await r.json(); } catch (e) { throw new Error('Server returned an invalid response.'); }
+  if (!r.ok) throw new Error(d.error || 'Request failed');
+  return d;
+}
+
+function sourceBadge(src) { return '<span class="status">' + (src === 'ai' ? 'AI generated' : 'Offline fallback') + '</span>'; }
+function listHtml(arr) { const a = Array.isArray(arr) ? arr : []; return a.length ? '<ul>' + a.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' : '<p class="muted">No items available.</p>'; }
+function scoreHtml(score) { const n = Math.max(0, Math.min(100, Number(score) || 0)); return '<div class="score-row"><div class="score">' + n + '<small>/100</small></div><div class="scorebar"><div style="width:' + n + '%"></div></div></div>'; }
+
+async function loadStats() {
+  try {
+    const rows = await api('/api/sessions/' + encodeURIComponent(uid));
+    const sessions = Array.isArray(rows) ? rows : [];
+    $('statSessions').textContent = sessions.length;
+    let q = 0, best = null;
+    sessions.forEach(s => { if (s.type === 'questions') q += Number(s.count || (Array.isArray(s.questions) ? s.questions.length : 0)) || 0; if (s.type === 'resume' && typeof s.score === 'number') best = best === null ? s.score : Math.max(best, s.score); });
+    $('statQuestions').textContent = q;
+    $('statResume').textContent = best === null ? '—' : best + '/100';
+  } catch (e) { $('statSessions').textContent = '—'; $('statQuestions').textContent = '—'; }
+}
+
+document.querySelectorAll('.tabs button').forEach(btn => btn.onclick = () => {
+  document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('active', b === btn));
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === btn.dataset.tab));
+  if (btn.dataset.tab === 'history') loadHistory();
+  if (btn.dataset.tab === 'resume') $('rtext').focus();
+});
+
+$('qgo').onclick = async () => {
+  $('qerr').textContent = ''; $('qout').innerHTML = '<div class="card loading">Generating your interview…</div>'; $('qgo').disabled = true;
+  try {
+    const role = $('role').value.trim();
+    if (!role) throw new Error('Please enter a target role.');
+    const count = Number($('count').value);
+    const d = await api('/api/questions', {role, level:$('level').value, count});
+    const questions = Array.isArray(d.questions) ? d.questions : [];
+    if (!questions.length) throw new Error('No questions were generated.');
+    renderQuestions(questions, d.source);
+    window.scrollTo({top:$('qout').offsetTop - 20, behavior:'smooth'});
+    loadStats();
+  } catch (e) { $('qout').innerHTML = ''; $('qerr').textContent = e.message; } finally { $('qgo').disabled = false; }
+};
+
+function renderQuestions(questions, source) {
+  let current = 0;
+  const answers = new Array(questions.length).fill('');
+  function render() {
+    const x = questions[current];
+    const pct = ((current + 1) / questions.length) * 100;
+    $('qout').innerHTML = '<div class="card"><div class="question-head"><div><div class="qnum">Question ' + (current+1) + ' of ' + questions.length + '</div><h2>' + esc(x.q) + '</h2></div>' + sourceBadge(source) + '</div><div class="progress"><div style="width:' + pct + '%"></div></div><div class="tip">💡 ' + esc(x.tip) + '</div><label for="answerBox">Your answer</label><textarea id="answerBox" placeholder="Answer as if you were in a real interview..."></textarea><div class="answer-actions"><button class="secondary" id="skipBtn">' + (current === questions.length - 1 ? 'Finish' : 'Skip') + '</button><button class="primary" id="evalBtn">Evaluate answer →</button></div><div id="feedback"></div></div>';
+    $('answerBox').value = answers[current];
+    $('evalBtn').onclick = async () => {
+      const answer = $('answerBox').value.trim();
+      if (answer.length < 20) { $('feedback').innerHTML = '<div class="feedback err">Please give a little more detail before evaluating your answer.</div>'; return; }
+      answers[current] = answer; $('evalBtn').disabled = true; $('feedback').innerHTML = '<div class="feedback loading">Evaluating your answer…</div>';
+      try {
+        const d = await api('/api/evaluate', {role:$('role').value.trim(), question:x.q, tip:x.tip, answer});
+        $('feedback').innerHTML = '<div class="feedback"><div class="section-label">AI feedback</div>' + scoreHtml(d.score) + '<h3>What you did well</h3>' + listHtml(d.strengths) + '<h3>What to improve</h3>' + listHtml(d.improvements) + (d.betterAnswer ? '<h3>Better approach</h3><p>' + esc(d.betterAnswer) + '</p>' : '') + '</div>';
+      } catch (e) { $('feedback').innerHTML = '<div class="feedback err">' + esc(e.message) + '</div>'; } finally { $('evalBtn').disabled = false; }
+    };
+    $('skipBtn').onclick = () => { answers[current] = $('answerBox').value; if (current < questions.length - 1) { current++; render(); } else { $('qout').innerHTML = '<div class="card empty"><h2>Interview complete 🎉</h2><p>You completed ' + questions.length + ' questions.</p><button class="primary" id="againBtn">Start another interview</button></div>'; $('againBtn').onclick = () => {$('qout').innerHTML=''; window.scrollTo({top:0,behavior:'smooth'});}; } };
+  }
+  render();
+}
+
+$('rgo').onclick = async () => {
+  $('rerr').textContent = ''; $('rout').innerHTML = '<div class="card loading">Reviewing your resume…</div>'; $('rgo').disabled = true;
+  try {
+    const role = $('rrole').value.trim(), resumeText = $('rtext').value.trim();
+    if (!role) throw new Error('Please enter the role you are applying for.');
+    if (resumeText.length < 100) throw new Error('Please paste at least 100 characters of your resume.');
+    const d = await api('/api/resume', {role, resumeText});
+    $('rout').innerHTML = '<div class="card"><div class="question-head"><div><div class="eyebrow">Recruiter assessment</div><h2>Your resume score</h2></div>' + sourceBadge(d.source) + '</div><div class="scorebox">' + scoreHtml(d.score) + '</div><div class="resume-grid" style="margin-top:20px"><div><div class="section-label">What works</div>' + listHtml(d.strengths) + '</div><div><div class="section-label">What to fix</div>' + listHtml(d.improvements) + '</div></div></div>';
+    loadStats();
+  } catch (e) { $('rout').innerHTML = ''; $('rerr').textContent = e.message; } finally { $('rgo').disabled = false; }
+};
+
+async function loadHistory() {
+  $('hout').innerHTML = '<div class="loading">Loading history…</div>';
+  try {
+    const rows = await api('/api/sessions/' + encodeURIComponent(uid));
+    if (!rows.length) { $('hout').innerHTML = '<div class="empty">No practice sessions yet.<br>Start a mock interview or review your resume.</div>'; return; }
+    $('hout').innerHTML = rows.slice().reverse().map(s => '<div class="history-item"><div><div class="history-title">' + (s.type === 'resume' ? '📄 Resume Review' : '🎤 Mock Interview') + '</div><div class="muted">' + esc(s.role || 'Interview') + '</div></div><div style="text-align:right"><strong>' + (s.type === 'resume' ? ((typeof s.score === 'number' ? s.score : '—') + '/100') : ((s.questions?.length || s.count || 0) + ' questions')) + '</strong><br><span class="muted">' + new Date(s.createdAt).toLocaleString() + '</span></div></div>').join('');
+  } catch (e) { $('hout').innerHTML = '<div class="err">' + esc(e.message) + '</div>'; }
+}
+
+loadStats();
+</script>
+</body>
+</html>
